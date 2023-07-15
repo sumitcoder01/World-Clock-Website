@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>World Clock Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-light bg-gradient">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container">
+                <a class="navbar-brand text-light" href="index.html" target="_blank"><i class="bi bi-stopwatch"></i>
+                    <span class="mx-2">World Clock</span></a>
+                <form class="d-flex mx-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            </div>
+        </nav>
+        <div class=" container pricing-header p-3 pb-md-4 mx-auto my-5 text-center">
+            <h3 class="display-4 fw-normal">Welcome To World Clock</h3>
+            <p class="fs-5 text-muted py-3">Quickly build an effective World <i>Clock Table</i> for your potential
+                customers
+                with this Bootstrap example. It’s built with default</p>
+        </div>
+    </header>
+    <main class="my-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center my-5">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">INDIA</h4>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title pricing-card-title"><span id="india"></span></h2>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li class="mb-3">Time Zone: <strong>Asia/Kolkata</strong></li>
+                                <li class="mb-3">Delhi Capital</li>
+                                <li class="mb-3">29 States</li>
+                                <li class="mb-3">1 Time Zone</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">USA</h4>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title pricing-card-title"><span id="usa"></span></h2>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li class="mb-3">Time Zone: <strong>America/Los_Angeles</strong></li>
+                                <li class="mb-3">Washignton Dc Capital</li>
+                                <li class="mb-3">30 States</li>
+                                <li class="mb-3">12 Time Zone</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">CHINA</h4>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title pricing-card-title"><span id="china"></span></h2>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li class="mb-3">Time Zone: <strong>Asia/Shanghai</strong></li>
+                                <li class="mb-3">Bijing Capital</li>
+                                <li class="mb-3">40 States</li>
+                                <li class="mb-3">3 Time Zone</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container my-5 text-center">
+            <label for="appt">Select a time: </label>
+            <input type="time" id="alarm" name="alarm">
+        </div>
+        <div class="form-box my-5 mx-auto text-center">
+            <h5 class="my-4">Selected Time Zone according To your Region</h5>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault" checked>
+                <label class="form-check-label" for="flexRadioDefault">
+                    INDIA
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault" disabled>
+                <label class="form-check-label" for="flexRadioDefault">
+                    CHINA
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault" disabled>
+                <label class="form-check-label" for="flexRadioDefault">
+                    USA
+                </label>
+            </div>
+        </div>
+    </main>
+    <div class="container">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2022 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#facebook"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
